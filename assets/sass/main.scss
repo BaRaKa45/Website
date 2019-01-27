@@ -1,0 +1,38 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+header {
+  background-color: rgb(32, 32, 32);
+  min-height: 100vh;
+
+  .navbar {
+    height: 55px;
+    a {
+      color: white;
+      font-size: 24px;
+      font-family: 'Source Sans Pro', sans-serif;
+      text-transform: uppercase;
+    }
+  }
+
+  .title-container {
+    text-align: center;
+    h1 {
+      color: white;
+      font-size: 6vw;
+      font-family: 'Source Sans Pro', sans-serif;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+
+    .developper {
+      color: white;
+      font-size: 3.8vw;
+      font-family: 'Source Sans Pro', sans-serif;
+      text-transform: uppercase;
+      margin-left: 26vw;
+      position: relative;
+      top: -2vw;
+    }
+  }
+}
