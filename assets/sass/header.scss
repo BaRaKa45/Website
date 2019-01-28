@@ -1,0 +1,50 @@
+@import "constantes";
+
+.navbar {
+  height: 55px;
+  background-color: rgb(32, 32, 32);
+  a {
+    color: white;
+    font-size: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+  }
+}
+
+header {
+  background-color: rgb(32, 32, 32);
+  min-height: 100vh;
+
+  .title-container {
+    text-align: center;
+
+    .developper {
+      animation-name: slip-developper;
+      animation-duration: 5s;
+      transition-property: margin-left;
+      color: $primary-color;
+      font-size: 3.8vw;
+      font-family: 'Source Sans Pro', sans-serif;
+      text-transform: uppercase;
+      margin-left: 26vw;
+      position: relative;
+      top: -2vw;
+      -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+      animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+  }
+}
+
+
+@keyframes slip-developper {
+  0%   {margin-left: -100vw; color: white}
+  100% {margin-left: 26vw; color: white}
+}
+
+
+@keyframes flashes-developper {
+  0% {opacity: 0;}
+  40% {opacity: 1;}
+  60% {opacity: 0;}
+  100% {opacity: 1;}
+}

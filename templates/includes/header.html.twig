@@ -1,7 +1,11 @@
-<header class="row">
-    {% include './includes/navbar.html.twig' %}
+{% block stylesheets %}
+    {{ encore_entry_link_tags('header') }}
+{% endblock %}
+{% include './includes/navbar.html.twig' %}
+
+<header class="row d-flex justify-content-center align-items-center">
     <div class="col-12 title-container">
         <h1>Anthony Sottejeau</h1>
-        <span class="developper">WEB DEVELOPPER</span>
+        <span class="developper animated bounceInLeft delay-2s">WEB DEVELOPPER</span>
     </div>
 </header>
