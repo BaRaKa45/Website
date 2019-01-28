@@ -7,14 +7,27 @@ $(document).ready(function() {
 
     function scrollTo( target ) {
         if( target.length ) {
-            $("html, body").stop().animate( { scrollTop: target.offset().top }, 1500);
+            $("html, body").stop().animate( { scrollTop: target.offset().top - 60 }, 1500);
         }
     }
 
+    function scrollToTop() {
+        $("html, body").animate({scrollTop : 0}, 1000);
+    }
 
-    $('#link-description').on('click', function (event) {
+    $('#link-home').on('mouseover', function (event) {
+        event.preventDefault();
+        scrollToTop();
+    });
+
+    $('#link-description').on('mouseover', function (event) {
         event.preventDefault();
         scrollTo( $("#description") );
+    });
+
+    $('#link-career').on('mouseover', function (event) {
+        event.preventDefault();
+        scrollTo( $("#career") );
     });
 
 });
