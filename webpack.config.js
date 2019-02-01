@@ -7,7 +7,7 @@ Encore
     .addStyleEntry('main', './assets/sass/main.scss')
     .addStyleEntry('header', './assets/sass/header.scss')
     .addStyleEntry('description', './assets/sass/description.scss')
-    .cleanupOutputBeforeBuild()
+    //.cleanupOutputBeforeBuild()
     .enableSingleRuntimeChunk()
     .enableSourceMaps(!Encore.isProduction())
     .enableVersioning(Encore.isProduction())

@@ -19,32 +19,37 @@ header {
     text-align: center;
 
     .developper {
-      animation-name: slip-developper;
-      animation-duration: 5s;
-      transition-property: margin-left;
-      color: $primary-color;
+      color: white;
       font-size: 3.8vw;
-      font-family: 'Source Sans Pro', sans-serif;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 200;
       text-transform: uppercase;
-      margin-left: 26vw;
+      margin-left: 21vw;
       position: relative;
       top: -2vw;
+      animation-name: slip-developper;
+      animation-duration: 5s;
       -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
       animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    span {
+      font-size: 40px;
+      animation-name: show-arrow;
+      animation-duration: 5s;
+      font-weight: 100;
     }
   }
 }
 
 
 @keyframes slip-developper {
-  0%   {margin-left: -100vw; color: white}
-  100% {margin-left: 26vw; color: white}
+  0% { margin-left: -100vw; }
+  100% { margin-left: 21vw; }
 }
 
-
-@keyframes flashes-developper {
-  0% {opacity: 0;}
-  40% {opacity: 1;}
-  60% {opacity: 0;}
-  100% {opacity: 1;}
+@keyframes show-arrow {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }

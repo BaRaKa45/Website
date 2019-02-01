@@ -20,7 +20,7 @@ $(document).ready(function() {
         scrollToTop();
     });
 
-    $('#link-description').on('mouseover', function (event) {
+    $('.link-description').on('mouseover', function (event) {
         event.preventDefault();
         scrollTo( $("#description") );
     });
@@ -29,5 +29,11 @@ $(document).ready(function() {
         event.preventDefault();
         scrollTo( $("#career") );
     });
+
+    $(".progress-bar").map(function(){
+        return $( this ).css('width', $( this ).attr("aria-valuenow") + "%");
+    });
+    console.log($(".progress-bar"));
+
 
 });
